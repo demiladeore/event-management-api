@@ -55,9 +55,9 @@ All dependencies are listed in requirements.txt
 
 1️⃣ Clone the repository
 
-```
-git clone [https://github.com/demiladeore/event-management-api.git](https://github.com/demiladeore/event-management-api.git)
-```
+
+git clone [githubrepo](https://github.com/demiladeore/event-management-api.git)
+
 
 ```
 cd event_management_api
@@ -70,11 +70,12 @@ pip install -r requirements.txt
 ```
 
 3️⃣ Run the app
-bash
-Copy
-Edit
+```bash
 uvicorn main:app --reload
+```
 4️⃣ Access the API
+```
 Swagger UI → http://127.0.0.1:8000/docs
 
 ReDoc → http://127.0.0.1:8000/redoc
+```
