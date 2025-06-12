@@ -55,8 +55,13 @@ All dependencies are listed in requirements.txt
 
 1️⃣ Clone the repository
 
-git clone [<github-repo-url>](https://github.com/demiladeore/event-management-api.git)
+```
+git clone [https://github.com/demiladeore/event-management-api.git](https://github.com/demiladeore/event-management-api.git)
+```
+
+```
 cd event_management_api
+```
 
 2️⃣ Install dependencies
 
