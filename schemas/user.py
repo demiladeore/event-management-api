@@ -1,18 +1,21 @@
-from pydantic import BaseModel
-# from typing import Annotated
+# schemas/user.py
 
-class User(BaseModel):
-    id: str
+from pydantic import BaseModel, EmailStr
+from typing import Optional
+
+class UserBase(BaseModel):
     name: str
-    email: str
+    email: EmailStr
+
+class UserCreate(UserBase):
+    pass
+
+class UserUpdate(UserBase):
+    is_active: Optional[bool] = True
+
+class User(UserBase):
+    id: int
     is_active: bool = True
 
-class UserCreate(BaseModel):
-    name: str
-    email: str
-    is_active: bool = True
-
-class UserUpdate(BaseModel):
-    name: str
-    email: str
-    is_active: bool = True
+    class Config:
+        orm_mode = True
